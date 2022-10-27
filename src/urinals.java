@@ -7,9 +7,30 @@ import java.io.InputStreamReader;
 
 //author - Suvarshitha kalvakuntla (skalvak1 )
 public class urinals {
+    public String getString(){
+        System.out.println("enter a string");
+        return "";
+    }
+
+    public Boolean checkValidString(String str){
+        System.out.println("checks whether the input string has an error");
+        return false;
+    }
+
+    public int countUrinals(String str){
+        System.out.println("count the number of free urinals");
+        return 0;
+    }
 
     public static void main(String[]args) throws IOException {
-        System.out.println("implemented main method in urinals class");
+        System.out.println("added main method in urinals class");
+        String inputStr;
+        int validUrinals;
+        urinals urinal = new urinals();
+        inputStr = urinal.getString();
+        validUrinals = urinal.countUrinals(inputStr);
+        System.out.println("number of free urinals are" + "  " +validUrinals);
+
 
     }
 }
