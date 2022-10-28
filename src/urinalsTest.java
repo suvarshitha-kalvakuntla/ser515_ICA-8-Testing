@@ -19,11 +19,19 @@ class urinalsTest {
     void getString() {
 
 
+
     }
 
     @Test
     void goodString() {
-        assertTrue( false == urinal.goodString("10000000000000000000000000000000000000000"), "====== Suvarshitha kalvakuntla == TEST FOUR EXECUTED =======");
+        assertTrue( false == urinal.goodString("111000"), "====== Suvarshitha kalvakuntla == TEST ONE FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST ONE EXECUTED =======");
+        assertTrue( false == urinal.goodString("abc"), "====== Suvarshitha kalvakuntla == TEST TWO FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST TWO EXECUTED =======");
+        assertTrue( false == urinal.goodString("10000000000000000000000000000000000000000"), "====== Suvarshitha kalvakuntla == TEST THREE FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST THREE EXECUTED =======");
+        assertTrue( true == urinal.goodString("100"), "====== Suvarshitha kalvakuntla == TEST FOUR FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST FOUR EXECUTED =======");
 
     }
 
