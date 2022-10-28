@@ -14,7 +14,19 @@ public class urinals {
 
     public  Boolean goodString(String str){
         System.out.println("checks whether the input string has an error");
-        return false;
+        if(str.length() <1 || str.length() >20 )
+            return false;
+        char ch;
+        for(int i=0;i<(str.length()-1);i++){
+
+            ch=str.charAt(i);
+            if(ch != '1' && ch!= '0')
+                return false;
+            if(ch == '1' && str.charAt(i + 1) == '1')
+                return false;
+
+        }
+        return true;
     }
 
     public  int countUrinals(String str){
