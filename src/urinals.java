@@ -64,7 +64,7 @@ public class urinals {
                 flag+=1;
             }else{
 
-                if(flag>0){
+                if(flag>1){
                     flag-=1;
                     if(flag%2=='0')
                         pos=pos+flag/2;
