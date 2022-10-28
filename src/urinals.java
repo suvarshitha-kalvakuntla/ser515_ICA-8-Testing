@@ -56,7 +56,32 @@ public class urinals {
 
     public  int countUrinals(String str){
         //System.out.println("count the number of free urinals");
-       return 0;
+        int pos=0;
+        int flag=0;
+        for(int i=0;i<str.length();i++){
+
+            if(str.charAt(i)=='0'){
+                flag+=1;
+            }else{
+
+                if(flag>0){
+                    flag-=1;
+                    if(flag%2=='0')
+                        pos=pos+flag/2;
+                    else
+                        pos=pos+1+(flag-1)/2;
+
+                }
+                flag=-1;
+
+            }
+
+        }
+
+
+        return pos;
+
+
     }
     public boolean ResultFile(String stringBuilder, File file){
         try {
