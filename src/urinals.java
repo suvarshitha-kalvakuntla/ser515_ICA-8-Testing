@@ -31,7 +31,6 @@ public class urinals {
         validUrinals = urinal.countUrinals(inputStr);
         System.out.println("number of free urinals are" + "  " +validUrinals);
 
-
     }
 }
 

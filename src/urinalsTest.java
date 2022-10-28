@@ -24,7 +24,6 @@ class urinalsTest {
     void goodString() {
         assertTrue( urinal.goodString("00000") == false, "====== Suvarshitha kalvakuntla == TEST ONE EXECUTED =======");
 
-
     }
 
     @Test
