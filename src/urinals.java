@@ -15,8 +15,25 @@ public class urinals {
     }
 
     public boolean inputFromFile(urinals u, StringBuilder outputResult) throws IOException {
+        File file = new File("src/urinal.dat");
+        FileReader fileReader = new FileReader(file);
+        if(fileReader == null) {
+            System.err.println("Error in reading dat file");
+            return false;
 
-        return false;
+        }
+        Scanner scanner = new Scanner(fileReader);
+        String str;
+        while(scanner.hasNextLine()) {
+            str = scanner.nextLine();
+            if(str.compareTo("-1")==0)
+                break;
+            int countOfurinals = u.countUrinals(str);
+            outputResult.append(countOfurinals+"\n");
+
+        }
+
+        return true;
 
     }
 
