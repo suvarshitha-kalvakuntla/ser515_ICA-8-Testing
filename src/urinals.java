@@ -7,17 +7,17 @@ import java.io.InputStreamReader;
 
 //author - Suvarshitha kalvakuntla (skalvak1 )
 public class urinals {
-    public String getString(){
+    public  String getString(){
         System.out.println("enter a string");
         return "";
     }
 
-    public Boolean checkValidString(String str){
+    public  Boolean goodString(String str){
         System.out.println("checks whether the input string has an error");
-        return false;
+        return true;
     }
 
-    public int countUrinals(String str){
+    public  int countUrinals(String str){
         System.out.println("count the number of free urinals");
         return 0;
     }
