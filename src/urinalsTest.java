@@ -22,7 +22,7 @@ class urinalsTest {
 
     @Test
     void goodString() {
-        assertTrue( urinal.goodString("1000110001") == false, "====== Suvarshitha kalvakuntla == TEST THREE EXECUTED =======");
+        assertTrue( urinal.goodString("10000000000000000000000000000000000000000") == false, "====== Suvarshitha kalvakuntla == TEST FOUR EXECUTED =======");
 
     }
 
