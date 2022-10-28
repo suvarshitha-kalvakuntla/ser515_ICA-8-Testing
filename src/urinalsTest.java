@@ -48,9 +48,8 @@ class urinalsTest {
 
     @Test
     void countUrinals() {
-
-
-
+        assertTrue( 1 == urinal.countUrinals("10001"), "====== Suvarshitha kalvakuntla == TEST SEVEN FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST SEVEN EXECUTED =======");
 
     }
 

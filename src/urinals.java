@@ -71,6 +71,18 @@ public class urinals {
         return true;
 
     }
+    public File generateNewOutputFile(){
+        String path = "rule"+numberOfOuputFiles+".txt";
+        if(numberOfOuputFiles == 0) {
+            path = "rule.txt";
+        }
+        File file = new File(path);
+        while(file.exists()) {
+            numberOfOuputFiles++;
+            return generateNewOutputFile();
+        }
+        return file;
+    }
 
 
 
