@@ -128,7 +128,7 @@ public class urinals {
         if(t.compareTo("0")==0) {
 
             urinal.inputFromFile(urinal, stringBuilder);
-            //System.out.println(urinal.ResultFile(stringBuilder.toString(), urinal.generateNewOutputFile()));
+            System.out.println(urinal.ResultFile(stringBuilder.toString(), urinal.generateNewOutputFile()));
         }
         else{
             inputStr = urinal.getString();
