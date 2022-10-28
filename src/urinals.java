@@ -14,8 +14,8 @@ public class urinals {
 
     public  Boolean goodString(String str){
         System.out.println("checks whether the input string has an error");
-
-
+        if(str.length() <1 || str.length() >20 )
+            return false;
         char ch;
         for(int i=0;i<(str.length()-1);i++){
 
