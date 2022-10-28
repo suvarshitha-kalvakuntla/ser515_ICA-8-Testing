@@ -56,10 +56,20 @@ public class urinals {
 
     public  int countUrinals(String str){
         //System.out.println("count the number of free urinals");
-        return 0;
+       return 0;
     }
     public boolean ResultFile(String stringBuilder, File file){
-        return false;
+        try {
+            FileWriter writer = new FileWriter(file);
+            writer.write(stringBuilder);
+            writer.close();
+            numberOfOuputFiles++;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+
     }
 
 
