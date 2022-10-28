@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import java.io.*;
 import java.util.Scanner;
 
+
+
 //author - Suvarshitha kalvakuntla (skalvak1 )
 public class urinals {
     public static int numberOfOuputFiles = 0;
@@ -14,7 +16,11 @@ public class urinals {
     return str;
     }
     public boolean checkFileExists(File file){
+        if(file.isFile())
+            return true;
         return false;
+
+
     }
 
     public boolean inputFromFile(urinals u, StringBuilder outputResult) throws IOException {
