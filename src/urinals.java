@@ -14,7 +14,7 @@ public class urinals {
 
     public  Boolean goodString(String str){
         System.out.println("checks whether the input string has an error");
-        return true;
+        return false;
     }
 
     public  int countUrinals(String str){
