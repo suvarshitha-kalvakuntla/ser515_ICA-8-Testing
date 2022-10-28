@@ -52,6 +52,8 @@ class urinalsTest {
         System.out.println("====== Suvarshitha kalvakuntla == TEST SEVEN EXECUTED =======");
         assertTrue( 0 == urinal.countUrinals("1001"), "====== Suvarshitha kalvakuntla == TEST EIGHT FAILED =======");
         System.out.println("====== Suvarshitha kalvakuntla == TEST EIGHT EXECUTED =======");
+        assertTrue( 3 == urinal.countUrinals("00000"), "====== Suvarshitha kalvakuntla == TEST NINE FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST NINE EXECUTED =======");
 
     }
 
