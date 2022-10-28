@@ -17,8 +17,8 @@ class urinalsTest {
 
     @Test
     void getString() {
-
-
+        assertEquals("1000",urinal.getString(),"====== Suvarshitha kalvakuntla == TEST FIVE FAILED =======");
+        System.out.println("====== Suvarshitha kalvakuntla == TEST FIVE EXECUTED =======");
 
     }
 
