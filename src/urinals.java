@@ -58,6 +58,8 @@ public class urinals {
         //System.out.println("count the number of free urinals");
         int pos=0;
         int flag=0;
+        if(!goodString(str))
+            return -1;
         for(int i=0;i<str.length();i++){
 
             if(str.charAt(i)=='0'){
