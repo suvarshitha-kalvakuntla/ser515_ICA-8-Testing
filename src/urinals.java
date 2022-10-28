@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
 //author - Suvarshitha kalvakuntla (skalvak1 )
 public class urinals {
     public  String getString(){
-        System.out.println("enter a string");
         return "";
     }
 
