@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.commons.util.StringUtils;
 
+import java.io.File;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -22,6 +23,14 @@ class urinalsTest {
     void inputFromFile() throws IOException {
         assertTrue(urinal.inputFromFile(urinal, new StringBuilder("")));
         System.out.println("====== Suvarshitha kalvakuntla == TEST FIVE EXECUTED =======");
+    }
+
+
+    @Test
+    void ResultFile(){
+        assertTrue(urinal.ResultFile("10",new File("test.txt")));
+        System.out.println("====== Suvarshitha kalvakuntla == TEST SIX EXECUTED =======");
+
     }
 
     @Test

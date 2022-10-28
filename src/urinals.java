@@ -58,6 +58,9 @@ public class urinals {
         //System.out.println("count the number of free urinals");
         return 0;
     }
+    public boolean ResultFile(String stringBuilder, File file){
+        return false;
+    }
 
 
 
