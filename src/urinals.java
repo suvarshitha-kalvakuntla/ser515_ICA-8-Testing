@@ -13,9 +13,13 @@ public class urinals {
 
     return str;
     }
+    public boolean checkFileExists(File file){
+        return false;
+    }
 
     public boolean inputFromFile(urinals u, StringBuilder outputResult) throws IOException {
         File file = new File("src/urinal.dat");
+        checkFileExists(file);
         FileReader fileReader = new FileReader(file);
         if(fileReader == null) {
             System.err.println("Error in reading dat file");
@@ -124,7 +128,7 @@ public class urinals {
         String inputStr;
         int validUrinals;
         urinals urinal = new urinals();
-        System.out.println("enter 0 for file input , 1 for terminal input");
+        System.out.println("enter 0 for file input , 1 for keyboard input");
         String t = urinal.getString();
         StringBuilder stringBuilder = new StringBuilder("");
         if(t.compareTo("0")==0) {

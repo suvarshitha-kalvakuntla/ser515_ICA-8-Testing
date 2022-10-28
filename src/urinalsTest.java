@@ -24,6 +24,12 @@ class urinalsTest {
         assertTrue(urinal.inputFromFile(urinal, new StringBuilder("")));
         System.out.println("====== Suvarshitha kalvakuntla == TEST FIVE EXECUTED =======");
     }
+    @Test
+    void checkFileExists(){
+        assertTrue(urinal.checkFileExists(new File("src/urinal.dat")));
+        System.out.println("====== Suvarshitha kalvakuntla == TEST Eleven EXECUTED =======");
+
+    }
 
 
     @Test
